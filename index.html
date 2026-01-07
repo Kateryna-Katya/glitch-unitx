@@ -1,56 +1,448 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/glitch-unitx/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glitch UnitX — Разработка AI-ассистентов и ботов</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI2IiBmaWxsPSIjMDUwNTA1Ii8+PHBhdGggZD0iTTggMTJDOCAxMC44OTU0IDguODk1NDMgMTAgMTAgMTBIMjJDMjMuMTA0NiAxMCAyNCAxMC44OTU0IDI0IDEyVjIwQzI0IDIxLjEwNDYgMjMuMTA0NiAyMiAyMiAyMkgxMEM4Ljg5NTQzIDIyIDggMjEuMTA0NiA4IDIwVjEyWiIgc3Ryb2tlPSIjNjM2NkYxIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMTIgMTZIMjAiIHN0cm9rZT0iIzEwQjk4MSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script type="module" crossorigin src="/glitch-unitx/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/glitch-unitx/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/glitch-unitx/assets/styles-BoJbicGg.css">
   </head>
   <body>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__glitch">Glitch</span><span class="logo__unit">UnitX</span>
+    </a>
+
+    <nav class="nav" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#tech" class="nav__link">Технологии</a></li>
+        <li class="nav__item"><a href="#projects" class="nav__link">Проекты</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--primary">Связаться</a>
+      <button class="burger" id="burger-menu" aria-label="Menu">
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+    <div class="hero__bg-visual">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container hero__container">
+        <div class="hero__content">
+            <div class="hero__badge">
+                <span class="badge__dot"></span>
+                AI-платформа 2026
+            </div>
+
+            <h1 class="hero__title" id="hero-title">
+                Технология <span class="text-accent">будущего</span> для ваших задач
+            </h1>
+
+            <p class="hero__subtitle" id="hero-subtitle">
+                Разработка AI-ассистентов с немецкой точностью и инновационным подходом.
+            </p>
+
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--primary">Запросить доступ</a>
+                <a href="#tech" class="btn btn--outline">Смотреть блог</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Переосмыслите подход к <span class="text-accent">развитию AI</span></h2>
+            <p class="section-desc">Наша платформа — это не просто код. Это инновационная технология, объединяющая
+                нейронные сети и бизнес-логику в единую экосистему.</p>
+        </div>
+
+        <div class="about__grid">
+            <div class="about__card glass-panel" data-reveal>
+                <div class="about__card-icon">
+                    <i data-lucide="layers"></i>
+                </div>
+                <h3 class="about__card-title">Модульная архитектура</h3>
+                <p class="about__card-text">Решения, которые меняют правила игры. Мы строим ботов по принципу
+                    конструктора: легко масштабировать, просто обновлять.</p>
+                <div class="about__card-footer">
+                    <span class="status-tag">Стабильность 99.9%</span>
+                </div>
+            </div>
+
+            <div class="about__card glass-panel about__card--featured" data-reveal>
+                <div class="about__card-icon">
+                    <i data-lucide="brain-circuit"></i>
+                </div>
+                <h3 class="about__card-title">Hybrid Intelligence</h3>
+                <p class="about__card-text">AI-инструменты для реальных задач. Сочетание LLM последнего поколения с
+                    вашими уникальными данными для максимальной точности ответов.</p>
+                <div class="about__card-footer">
+                    <span class="status-tag status-tag--active">Live Learning</span>
+                </div>
+            </div>
+
+            <div class="about__card glass-panel" data-reveal>
+                <div class="about__card-icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+                <h3 class="about__card-title">Безопасность ЕС</h3>
+                <p class="about__card-text">Предложение активно только в странах ЕС. Полное соответствие GDPR и
+                    экспертная поддержка на всех этапах внедрения.</p>
+                <div class="about__card-footer">
+                    <span class="status-tag">GDPR Compliant</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="innovations" id="tech">
+    <div class="container">
+        <div class="innovations__top">
+            <div class="innovations__text">
+                <h2 class="section-title">Инновационная <span class="text-accent">цифровая инфраструктура</span></h2>
+                <p class="section-desc">Мы используем передовые решения, которые меняют правила игры в автоматизации
+                    бизнес-процессов.</p>
+            </div>
+            <div class="innovations__cta">
+                <span class="tech-label">Наш стек 2026</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper tech-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide tech-card">
+                <div class="tech-card__icon">🧠</div>
+                <h4 class="tech-card__name">LLM Integration</h4>
+                <p class="tech-card__info">GPT-5, Claude 4, Llama 4.0</p>
+            </div>
+            <div class="swiper-slide tech-card">
+                <div class="tech-card__icon">🛡️</div>
+                <h4 class="tech-card__name">Private Cloud</h4>
+                <p class="tech-card__info">Локальное хранение данных в DE</p>
+            </div>
+            <div class="swiper-slide tech-card">
+                <div class="tech-card__icon">⚡</div>
+                <h4 class="tech-card__name">Real-time API</h4>
+                <p class="tech-card__info">Отклик менее 150мс</p>
+            </div>
+            <div class="swiper-slide tech-card">
+                <div class="tech-card__icon">🔗</div>
+                <h4 class="tech-card__name">Multi-agent</h4>
+                <p class="tech-card__info">Связки из 10+ AI-агентов</p>
+            </div>
+            <div class="swiper-slide tech-card">
+                <div class="tech-card__icon">📊</div>
+                <h4 class="tech-card__name">Neural Analytics</h4>
+                <p class="tech-card__info">Прогноз поведения клиентов</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="innovations__footer">
+            <p class="footer-note">Стратегия роста на базе инноваций: подключаем за 2 минуты.</p>
+        </div>
+    </div>
+</section>
+<section class="projects-stack" id="projects">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Кейсы</span>
+            <h2 class="section-title">AI-решения, которые <span class="text-accent">уже работают</span></h2>
+        </div>
+
+        <div class="stack-wrapper">
+            <div class="stack-card card-1">
+                <div class="stack-card__content">
+                    <div class="stack-card__info">
+                        <span class="stack-card__tag">E-commerce</span>
+                        <h3>Neural Support Agent</h3>
+                        <p>Интеллектуальная система поддержки, которая понимает контекст и закрывает 85% тикетов без
+                            участия человека.</p>
+                        <ul class="stack-card__features">
+                            <li>Интеграция с GPT-4o</li>
+                            <li>Поддержка 12 языков</li>
+                        </ul>
+                    </div>
+                    <div class="stack-card__visual">
+                        <img src="img/placeholder.png" alt="Project 1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="stack-card card-2">
+                <div class="stack-card__content">
+                    <div class="stack-card__info">
+                        <span class="stack-card__tag">Legal Tech</span>
+                        <h3>EU Compliance AI</h3>
+                        <p>Проверка юридических документов на соответствие нормам ЕС и GDPR за считанные секунды.</p>
+                        <ul class="stack-card__features">
+                            <li>Локальное хранение в DE</li>
+                            <li>Zero-data retention</li>
+                        </ul>
+                    </div>
+                    <div class="stack-card__visual">
+                        <img src="img/placeholder.png" alt="Project 2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="stack-card card-3">
+                <div class="stack-card__content">
+                    <div class="stack-card__info">
+                        <span class="stack-card__tag">Fintech</span>
+                        <h3>Crypto Sentinel</h3>
+                        <p>Автономный агент для мониторинга аномалий в блокчейн-сетях и предотвращения фрода.</p>
+                        <ul class="stack-card__features">
+                            <li>Real-time аналитика</li>
+                            <li>ML-модели прогнозирования</li>
+                        </ul>
+                    </div>
+                    <div class="stack-card__visual">
+                        <img src="img/placeholder.png" alt="Project 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="blog__header">
+            <div class="blog__info">
+                <span class="section-subtitle">База знаний</span>
+                <h2 class="section-title">Практики, применимые <span class="text-accent">уже сегодня</span></h2>
+            </div>
+            <a href="#" class="btn-link">Все статьи <i data-lucide="chevron-right"></i></a>
+        </div>
+
+        <div class="blog__grid">
+            <article class="blog-card blog-card--large" data-reveal-blog>
+                <div class="blog-card__image-wrap">
+                    <img src="img/placeholder.png" alt="AI Trends" class="blog-card__img">
+                    <div class="blog-card__overlay"></div>
+                </div>
+                <div class="blog-card__content">
+                    <span class="blog-card__tag">Инновации</span>
+                    <h3 class="blog-card__title">Как внедрить AI-ассистента в бизнес-процессы в 2026 году</h3>
+                    <p class="blog-card__excerpt">Разбираем пошаговый путь, понятный каждому: от выбора модели до первой
+                        успешной интеграции в отдел продаж.</p>
+                    <div class="blog-card__footer">
+                        <span class="blog-card__date">12 мин чтения</span>
+                        <span class="blog-card__more">Читать далее <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-reveal-blog>
+                <div class="blog-card__image-wrap">
+                    <img src="img/placeholder.png" alt="Security" class="blog-card__img">
+                    <div class="blog-card__overlay"></div>
+                </div>
+                <div class="blog-card__content">
+                    <span class="blog-card__tag">Безопасность</span>
+                    <h3 class="blog-card__title">GDPR и AI в Германии: что нужно знать разработчику</h3>
+                    <div class="blog-card__footer">
+                        <span class="blog-card__date">8 мин чтения</span>
+                        <span class="blog-card__more"><i data-lucide="arrow-right"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-reveal-blog>
+                <div class="blog-card__image-wrap">
+                    <img src="img/placeholder.png" alt="Development" class="blog-card__img">
+                    <div class="blog-card__overlay"></div>
+                </div>
+                <div class="blog-card__content">
+                    <span class="blog-card__tag">Технологии</span>
+                    <h3 class="blog-card__title">Эволюция промптов: от команд к когнитивным картам</h3>
+                    <div class="blog-card__footer">
+                        <span class="blog-card__date">15 мин чтения</span>
+                        <span class="blog-card__more"><i data-lucide="arrow-right"></i></span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="container contact__container">
+        <div class="contact__info" data-reveal>
+            <h2 class="section-title">Готовы <span class="text-accent">начать проект?</span></h2>
+            <p class="section-desc">Получите бесплатную консультацию по всем вопросам автоматизации и внедрения
+                AI-инструментов.</p>
+
+            <div class="contact__methods">
+                <div class="method-item">
+                    <div class="method-item__icon"><i data-lucide="mail"></i></div>
+                    <div>
+                        <span class="method-item__label">Напишите нам</span>
+                        <a href="mailto:hello@glitch-unitx.fit" class="method-item__link">hello@glitch-unitx.fit</a>
+                    </div>
+                </div>
+                <div class="method-item">
+                    <div class="method-item__icon"><i data-lucide="phone"></i></div>
+                    <div>
+                        <span class="method-item__label">Позвоните нам</span>
+                        <a href="tel:+493020963900" class="method-item__link">+49 30 20963900</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact__form-wrapper" data-reveal>
+            <form id="ai-contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-input" placeholder="Ваше имя" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-input" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" name="phone" id="phone" class="form-input" placeholder="Телефон (только цифры)"
+                        pattern="[0-9+]*" inputmode="tel" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="message" id="message" class="form-input"
+                        placeholder="Опишите задачу (необязательно)"></textarea>
+                </div>
+
+                <div class="captcha-group">
+                    <label for="captcha" class="captcha-label">Решите пример: <span
+                            id="captcha-question">...</span></label>
+                    <input type="number" id="captcha-answer" class="form-input" placeholder="Ваш ответ" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Я согласен с <a href="./privacy.html" target="_blank">политикой
+                            конфиденциальности</a></label>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                    <span>Отправить запрос</span>
+                    <i data-lucide="send"></i>
+                </button>
+            </form>
+
+            <div id="form-success" class="form-result">
+                <div class="result-content">
+                    <div class="result-icon">✅</div>
+                    <h3 class="result-title">Запрос отправлен!</h3>
+                    <p>Экспертная поддержка свяжется с вами в течение 30 минут.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="logo footer__logo">
+        <span class="logo__glitch">Glitch</span>UnitX
       </a>
-    </p>
+      <p class="footer__tagline">Инновационная технология разработки AI-инструментов для реальных задач.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Навигация</h4>
+      <ul class="footer__list">
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#tech">Технологии</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#blog">Блог</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Правовая информация</h4>
+      <ul class="footer__list">
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+        <li><a href="./cookies.html">Cookie Policy</a></li>
+        <li><a href="./terms.html">Terms of Service</a></li>
+        <li><a href="./return.html">Return Policy</a></li>
+        <li><a href="./disclaimer.html">Disclaimer</a></li>
+        <li><a href="./personal-data-policy.html">Data Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contact-list">
+        <li>
+          <a href="tel:+493020963900" class="contact-item">
+            <span class="contact-item__icon">📞</span> +49 30 20963900
+          </a>
+        </li>
+        <li>
+          <a href="mailto:hello@glitch-unitx.fit" class="contact-item">
+            <span class="contact-item__icon">✉️</span> hello@glitch-unitx.fit
+          </a>
+        </li>
+        <li>
+          <div class="contact-item">
+            <span class="contact-item__icon">📍</span> Friedrichstraße 176-179, 10117 Berlin, Germany
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>&copy; 2026 Glitch UnitX. Платформа уже доступна в Европе.</p>
   </div>
 </footer>
+    <div id="cookie-popup" class="cookie-popup">
+  <div class="cookie-popup__content">
+    <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="cookies.html">Cookie
+        политике</a>.</p>
+    <button id="cookie-accept" class="btn btn--primary">Принять</button>
+  </div>
+</div>
+      </div>
+    </div>
 
 
+<script src="https://unpkg.com/split-type"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
