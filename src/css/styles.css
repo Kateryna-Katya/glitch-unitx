@@ -1618,3 +1618,107 @@ textarea.form-input {
         padding: 40px;
     }
 }
+/* --- Специфические правки для юридических страниц --- */
+.legal-page .header {
+    background: rgba(5, 5, 5, 0.95);
+}
+
+.pages__badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary-color);
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pages__content {
+    max-width: 850px;
+    /* Ограничиваем ширину текста для удобства чтения */
+}
+
+.legal-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin: 40px 0;
+}
+
+.legal-list li {
+    margin-bottom: 30px !important;
+    padding-left: 20px;
+    border-left: 2px solid var(--glass-border);
+}
+
+.list-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.check-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+.check-list li::before {
+    content: '→';
+    color: var(--accent-color);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.pages h1 {
+    line-height: 1.1;
+    margin-bottom: 60px;
+}
+
+.pages h2 {
+    color: var(--primary-color);
+    margin-top: 60px;
+}
+/* --- DISCLAIMER SPECIFIC --- */
+.disclaimer-box {
+    padding: 30px;
+    background: rgba(99, 102, 241, 0.05);
+    border-left: 4px solid var(--primary-color);
+    margin-bottom: 40px;
+    border-radius: 0 16px 16px 0;
+}
+
+.disclaimer-box p {
+    margin-bottom: 0;
+    color: var(--text-color);
+}
+
+.disclaimer-footer {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--glass-border);
+    font-size: 0.95rem;
+    color: var(--secondary-text);
+}
+
+.contact-block {
+    margin-top: 40px;
+    padding: 20px;
+    background: var(--glass-bg);
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.contact-block a {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.legal-page .pages h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 40px;
+}
